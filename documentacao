@@ -1,0 +1,60 @@
+# 🧠 Projeto de Machine Learning na Área da Saúde
+
+## 📌 Descrição
+
+Este projeto tem como objetivo aplicar técnicas de Machine Learning (ML) na área da saúde para **prever o risco de desenvolvimento de doenças crônicas**, como diabetes e doenças cardiovasculares. Utilizando algoritmos supervisionados e ferramentas de inteligência artificial da AWS e do ecossistema Python, buscamos criar um modelo preditivo que auxilie médicos e profissionais de saúde na tomada de decisões baseadas em dados.
+
+O modelo é treinado com um conjunto de dados reais anonimizados contendo informações clínicas e laboratoriais de pacientes. A partir disso, ele estima a probabilidade de ocorrência de uma condição médica, facilitando o diagnóstico precoce e a prevenção.
+
+## 🛠️ Tecnologias e Ferramentas Utilizadas
+
+- **Python** (Pandas, Scikit-learn, Matplotlib, Seaborn)
+- **Amazon SageMaker** – para treinamento e deploy do modelo em nuvem
+- **Amazon S3** – para armazenamento de datasets
+- **Amazon Comprehend Medical** – para análise de textos médicos (anotações clínicas)
+- **Jupyter Notebooks** – para desenvolvimento e experimentação
+- **Docker** – para empacotamento do ambiente
+- **Streamlit** – para criação de interface interativa (opcional)
+
+## ⚙️ Funcionalidades
+
+- Importação, limpeza e pré-processamento dos dados de pacientes
+- Treinamento e avaliação de modelos supervisionados (Random Forest, XGBoost, Logistic Regression)
+- Análise de importância de variáveis para interpretação do modelo
+- Geração de relatórios de performance: AUC, ROC Curve, F1-Score, Confusion Matrix
+- Interface para inserção de novos dados e obtenção de previsões
+- Deploy do modelo via API REST no AWS SageMaker Endpoint
+
+## 🧪 Base de Dados
+
+A base utilizada contém informações como:
+- Idade, sexo, IMC, pressão arterial
+- Resultados laboratoriais (glicemia, colesterol, triglicerídeos)
+- Histórico familiar e hábitos de vida
+- Diagnóstico anterior de doenças crônicas
+
+A base foi tratada e balanceada para lidar com classes desbalanceadas e garantir a generalização do modelo.
+
+## 📈 Resultados Esperados
+
+O sistema fornecerá:
+- Classificação binária (risco: **baixo** ou **alto**) para o desenvolvimento de doenças
+- Probabilidade associada à previsão
+- Insights sobre os principais fatores de risco
+
+Estes resultados poderão ser utilizados em ambientes clínicos ou de pesquisa para triagem de pacientes e definição de estratégias de saúde preventiva.
+
+## 👨‍⚕️ Aplicações Futuras
+
+- Integração com sistemas hospitalares (HIS)
+- Adição de NLP para interpretar anotações médicas
+- Expansão para outras condições como câncer, Alzheimer, etc.
+- Explicabilidade com SHAP ou LIME para maior transparência do modelo
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+> ⚠️ **Aviso**: Este projeto é de caráter educacional e experimental. Não deve ser utilizado para diagnóstico médico sem validação profissional.
